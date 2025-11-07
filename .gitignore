@@ -1,0 +1,10 @@
+# Ignore all files and directories starting with a dot
+.*
+
+
+# But keep these important dot files
+!.gitignore
+!.gitkeep
+
+# Ignore embedded git repositories
+eino-examples/
