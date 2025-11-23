@@ -6,19 +6,34 @@ require (
 	github.com/cloudwego/eino v0.5.10
 	github.com/cloudwego/eino-examples/quickstart/eino_assistant v0.0.0-20251030062102-28d7c0a57807
 	github.com/cloudwego/eino-ext/components/model/openai v0.1.2
-	github.com/cloudwego/eino-ext/components/tool/duckduckgo v0.0.0-20251030100426-0019cd119fa9
+	github.com/cloudwego/eino-ext/components/tool/duckduckgo v0.0.0-20251107064029-2e128d3d2258
+	github.com/cloudwego/eino-ext/components/tool/duckduckgo/v2 v2.0.0-20250707031732-1bfb5847488c
+	github.com/cloudwego/hertz v0.9.5
 	github.com/google/uuid v1.6.0
+	github.com/hertz-contrib/sse v0.0.6-0.20240617114443-10a844794bf3
 	github.com/redis/go-redis/v9 v9.10.0
 )
 
 require (
+	github.com/PuerkitoBio/goquery v1.10.3 // indirect
+	github.com/andybalholm/cascadia v1.3.3 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
+	github.com/cloudwego/eino-ext/components/model/ark v0.0.0-20250225083118-fd27d80f189c // indirect
+	github.com/cloudwego/netpoll v0.6.4 // indirect
+	github.com/corpix/uarand v0.2.0 // indirect
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
+	github.com/fsnotify/fsnotify v1.6.0 // indirect
+	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
-	github.com/rogpeppe/go-internal v1.14.1 // indirect
+	github.com/nyaruka/phonenumbers v1.0.55 // indirect
+	github.com/tidwall/gjson v1.14.4 // indirect
+	github.com/tidwall/match v1.1.1 // indirect
+	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/volcengine/volc-sdk-golang v1.0.23 // indirect
 	github.com/volcengine/volcengine-go-sdk v1.0.181 // indirect
+	golang.org/x/net v0.41.0 // indirect
 	golang.org/x/sync v0.16.0 // indirect
+	google.golang.org/protobuf v1.36.5 // indirect
 )
 
 require (
@@ -32,6 +47,7 @@ require (
 	github.com/cloudwego/eino-ext/components/document/transformer/splitter/markdown v0.0.0-20251105030607-6766df40f191
 	github.com/cloudwego/eino-ext/components/embedding/ark v0.1.0
 	github.com/cloudwego/eino-ext/components/indexer/redis v0.0.0-20251105030607-6766df40f191
+	github.com/cloudwego/eino-ext/components/retriever/redis v0.0.0-20251107064029-2e128d3d2258
 	github.com/cloudwego/eino-ext/libs/acl/openai v0.1.0 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/eino-contrib/jsonschema v1.0.2 // indirect

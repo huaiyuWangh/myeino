@@ -6,7 +6,6 @@ import (
 	"github.com/cloudwego/eino/components/prompt"
 	"github.com/cloudwego/eino/schema"
 	"log"
-	"os"
 )
 
 func main() {
@@ -39,8 +38,8 @@ func main() {
 	}
 	ctx := context.Background()
 	chatModelConfig := &openai.ChatModelConfig{
-		Model:   os.Getenv("ANTHROPIC_DEFAULT_SONNET_MODEL"), // 使用的模型版本
-		APIKey:  os.Getenv("ANTHROPIC_API_KEY"),              // OpenAI API 密钥
+		Model:   "claude-4.0-sonnet",                                                   // 使用的模型版本
+		APIKey:  "sk-791c03d4a69f21a06dee34acd0510615b8fe79ffbcc633b9b0c988e4aa9fe4b0", // OpenAI API 密钥
 		BaseURL: "https://api.qnaigc.com/v1",
 	}
 	log.Printf("chatModelConfig: %+v", chatModelConfig)

@@ -2,10 +2,10 @@ package main
 
 import (
 	"context"
-	"data-analyze/util"
 	"github.com/cloudwego/eino-ext/components/model/openai"
 	"github.com/cloudwego/eino/compose"
 	"log"
+	"myeino/util"
 	"os"
 
 	"github.com/cloudwego/eino-ext/components/tool/duckduckgo"
@@ -25,8 +25,8 @@ func main() {
 
 	// 创建并配置 ChatModel
 	chatModel, err := openai.NewChatModel(context.Background(), &openai.ChatModelConfig{
-		Model:   os.Getenv("ANTHROPIC_DEFAULT_SONNET_MODEL"), // 使用的模型版本
-		APIKey:  os.Getenv("ANTHROPIC_API_KEY"),              // OpenAI API 密钥
+		Model:   os.Getenv("ANTHROPIC_MODEL"),   // 使用的模型版本
+		APIKey:  os.Getenv("ANTHROPIC_API_KEY"), // OpenAI API 密钥
 		BaseURL: "https://api.qnaigc.com/v1",
 	})
 	if err != nil {
