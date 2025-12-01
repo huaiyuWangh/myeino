@@ -8,7 +8,7 @@ import (
 	"myeino/cmd/einoagent/agent"
 )
 
-var port = "8090"
+var port = "8080"
 
 func main() {
 	// 创建 Hertz 服务器

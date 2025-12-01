@@ -90,7 +90,7 @@ func newChatModel(ctx context.Context) (cm model.ChatModel, err error) {
 	log.Printf("[ChatModel] Model created successfully, Type: %T", innerCm)
 
 	// 返回包装的日志模型
-	cm = &LoggingChatModel{inner: innerCm}
+	cm = innerCm
 	log.Printf("[ChatModel] Wrapped with LoggingChatModel")
 	return cm, nil
 }

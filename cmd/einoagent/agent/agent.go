@@ -71,5 +71,5 @@ func RunAgent(ctx context.Context, id string, msg string) (*schema.StreamReader[
 		}
 	}()
 
-	return sr, nil
+	return srs[0], nil
 }

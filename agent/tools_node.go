@@ -29,7 +29,7 @@ func GetTools(ctx context.Context) ([]tool.BaseTool, error) {
 		return nil, err
 	}
 
-	toolDDGSearch, err := NewDDGSearch(ctx)
+	_, err = NewDDGSearch(ctx)
 	if err != nil {
 		return nil, err
 	}
@@ -38,7 +38,7 @@ func GetTools(ctx context.Context) ([]tool.BaseTool, error) {
 		toolTask,
 		toolOpen,
 		toolGitClone,
-		toolDDGSearch,
+		//toolDDGSearch,
 	}, nil
 }
 
